@@ -1,0 +1,16 @@
+{
+  "name": "buntest",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.3",
+    "elysia": "^0.6.23",
+    "uuid": "^9.0.1"
+  }
+}
