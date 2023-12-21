@@ -2,7 +2,6 @@ import { Elysia } from 'elysia'
 import { User } from './interfaces'
 import { MessageModel, UserModel } from './controllers'
 
-
 // TODO add validation
 // TODO add datetime
 // TODO use a real DB
@@ -36,8 +35,5 @@ const app = new Elysia()
         return newMessage
     })
     .listen(8080)
-
-
-// 8604caec-332c-472e-8e06-b4c259d9de9b
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`)
