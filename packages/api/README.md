@@ -6,7 +6,30 @@ A simple sarahah clone I developed to learn and try bun with [ElysiaJs](https://
 
 The API is fairly simple, there is no authentication, when a user is created he is given in which he can use to access his private messages he received, then his public handle is used to let people send him messages, this means a user can't access his received messaged wihtout his token.
 
-## Environment variables
+## Installation
+
+1. make sure you have [bunjs](https://bun.sh) is installed on your machine.
+
+1. Clone the project
+```bash
+git clone https://github.com/hasssanezzz/sarahah-clone.git
+```
+2. Navigate to the project
+```bash
+cd sarahah-clone
+```
+3. Install the requried dependencies
+```bash
+bun install
+```
+4. Create a sqlite DB and create the tables documented below.
+1. Create you `.env` and type your desired DB file path (documented below).
+5. Run the developemnt server
+```bash
+bun dev
+```
+
+### Environment variables
 
 ```
 DB_PATH=<your_sqlite_db_path>
