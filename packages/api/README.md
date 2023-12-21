@@ -4,7 +4,7 @@ A simple sarahah clone I developed to learn and try bun with [ElysiaJs](https://
 
 ## How it works
 
-The API is fairly simple, there is no authentication, when a user is created he is given in which he can use to access his private messages he received, then his public handle is used to let people send him messages, this means a user can't access his received messaged wihtout his token.
+The API is fairly simple, there is no authentication, when a user is created he is given a token in which he can use to access his private messages he received, then his public handle is used to let people send him messages, this means a user can't access his received messages wihtout his token.
 
 ## Installation
 
@@ -90,7 +90,7 @@ As said before is API is simple, there are only 3 routes.
         * :handle (Path Parameter): User handle associated with the message.
     * Payload:
         * content (String): Content of the message.
-    * Handler: Create a new message using` MessageModel.create(content, handle)`.
+    * Handler: Create a new message using`MessageModel.create(content, handle)`.
 
 
 This project was created using `bun init` in bun v1.0.1. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
